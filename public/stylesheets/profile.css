@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+body{
+    background: linear-gradient(45deg, #28313B, #485461);
+}
+.main1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.cardpers {
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.cardpers>.cardpers-header {
+    border-bottom: 1px solid rgb(218, 218, 218);
+    display: flex;
+}
+.cardpers>.cardpers-header>.img-profile {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.cardpers>.cardpers-header>.title {
+    padding: 10px;
+    line-height: 1.2;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: 50%;
+}
+.cardpers>.cardpers-header>.title>.title-name {
+    font-weight: bold;
+    display: flex;
+    align-items: last baseline;
+}
+.cardpers>.cardpers-header>.title>.title-tag {
+    font-weight: light;
+    display: flex;
+    align-items: first baseline;
+    height: 100%;
+}
+
+.cardpers>.cardpers-body {
+    padding: 12px 10px;
+}
+.cardpers>.cardpers-body .row {
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.cardpers>.cardpers-body .row>.column {
+    text-align: center;
+}
+.cardpers>.cardpers-body .row>.column .title {
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.cardpers>.cardpers-body .row>.column .number {
+    font-weight: light;
+    font-size: 0.9em;
+}
+
+.cardpers>.cardpers-body .btn-link {
+    text-decoration: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #b9cfff;
+    color: #5a73ff;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.cardpers>.cardpers-body .btn-link:hover {
+    background-color: #b9cfff;
+    color: #0000ff;
+    border: 1px solid #5a73ff;
+}
+.cardpers>.cardpers-body .btn-link:active {
+    background-color: #1b63ff;
+    color: #ffffff;
+    border: 1px solid #5a73ff;
+}
+
+
+.flex{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: start;
+}
